@@ -7,19 +7,24 @@ This framework uses the API exposed by https://reqres.in/  to illustrate how API
 
 ``` Note: Make sure python and pip are installed on the system. Have tested the framework on Python 3.8.2 and pip 20.2.2```  
 
-To install the framework follow below steps:
+To install the framework follow below steps:  
+ 
+1. Download the project or clone the project.  
 
-1. Download the project or clone the project.
  ```git clone https://github.com/gurudattvshenoy/api_automation.git```
  
-2. Change the directory to api_automation.
+2. Change the directory to api_automation.  
+
    ```Eg: cd api_automation```
    
-3.Install dependencies for the framework using requirements.txt.
+3.Install dependencies for the framework using requirements.txt.  
+
   ```pip install requirements.txt```
   
-4.Navigate to tests folder:
- ``` pytest -s --html=reports/relayrapi-users-crud.html```
+4.Navigate to tests folder:  
+
+ ``` pytest -s --html=reports/relayrapi-users-crud.html```  
+ 
 ```
 ├── conf
 │   ├── __init__.py
