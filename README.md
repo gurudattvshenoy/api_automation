@@ -24,7 +24,8 @@ To install the framework follow below steps:
 4.Navigate to tests folder and run the below command:  
 
  ``` pytest -s --html=reports/relayrapi-users-crud.html```  
- 
+
+# Project Structure  
 ```
 ├── conf    - Contains configuration files like URL and base path,
 │   ├── RelayrApiConstants.py  - Read the configurations and stores the as CONSTANT.
