@@ -48,42 +48,10 @@ To install the framework follow below steps:
 ```
 
 API Reference: https://reqres.in/
-
-This will run the tests and generates html reports in reports folder and execution logs will reside in logs folder for tracing the execution.
-
-Tests automated are 
-1. Create User:  
-
-POST REST call to URL - https://reqres.in/api/users   
-
-Request payload:
-{
-    "name": "guru",
-    "job": "Software SDET"
-}  
-
-HTTP Response status:201  
-
-
-2. List User:  
-
-Fetches the user details whose id is 2.
-GET REST call to URL - https://reqres.in/api/users/2  
-
-
-API Response:
-{
-    "data": {
-        "id": 2,
-        "email": "janet.weaver@reqres.in",
-        "first_name": "Janet",
-        "last_name": "Weaver",
-        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
-    },
-    "ad": {
-        "company": "StatusCode Weekly",
-        "url": "http://statuscode.org/",
-        "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
-    }
-} 
-
+```
+Test automated:
+1. Verify user can be created using rest post api call
+2. Verify user can be updated rest put api call
+3. Verify user can be fetched using rest get api call
+4. Verify user can be deleted using rest delete api call
+```
