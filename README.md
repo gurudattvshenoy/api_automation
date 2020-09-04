@@ -1,14 +1,14 @@
 
-This the automation framework developed using python request library and pytest.
+API automation framework developed using python request library and pytest.
 request library has methods which helps to make REST calls to the any application which exposes APIs.
 pytest is an unit test framework which helps in writing test cases.
 
 This framework uses the API exposed in https://reqres.in/ to show how API calls can be made. This framework can be used against other applications which exposes the 
 API.
 
-# Installing the framework:
-# Pre-requisite :
-# python and pip
+Installing the framework:
+``` Note: Make sure python and pip are installed on the system. Have tested the framework on Python 3.8.2 
+ and pip 20.2.2```
 
 Clone the project:
 1. Download the project or clone the project
