@@ -1,5 +1,5 @@
 
-API automation framework developed using python request library and pytest.
+This API automation framework is developed using python requests library and pytest unit testing framework.
 request library has methods which helps to make REST calls to the any application which exposes APIs.
 pytest is an unit test framework which helps in writing test cases.
 
@@ -27,22 +27,22 @@ To install the framework follow below steps:
  
 ```
 ├── conf    - Contains configuration files like URL and base path,
-│   ├── RelayrApiConstants.py
-│   └── relayrapi.json
+│   ├── RelayrApiConstants.py  - Read the configurations and stores the as CONSTANT.
+│   └── relayrapi.json         - Contains URL and base path
 ├── libs             - Core libraries or utilities which are often used by test cases
 │   ├── common       
-│   │   ├── ApiHelper.py  
-│   │   ├── Assertion.py
-│   │   ├── ExecTime.py
-│   │   ├── Logger.py
+│   │   ├── ApiHelper.py  - Generic functions for making GET,POST,DELETE, UPDATE REST calls.
+│   │   ├── Assertion.py  - wrapper over asser function for better usage
+│   │   ├── ExecTime.py   - Decorator to show execution time and start and end of functions
+│   │   ├── Logger.py     - Customizes log to print in testcase.log
 │   └── userapi
-│       └── UserApi.py
-├── logs        - Execution logs
+│       └── UserApi.py    - Allow operations provided by /user. This will be for CRUD operations supported by API.
+├── logs                  - Execution logs having steps done during execution
 │   └── testcase.log
-├── pytest.ini
+├── pytest.ini            - Overrides the pytest defaults i.e. pytest searches test in "tests" folder, test case should start with Verify etc.
 ├── reports     - Execution reports   
 │   └── relayrapi-users-crud.html
-├── requirements.txt - Dependencies of the project
+├── requirements.txt - Dependencies of the project to run.
 └── tests            - test cases written using pytest framework.
     └── test_users.py
 ```
