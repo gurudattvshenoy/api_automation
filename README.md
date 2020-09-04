@@ -6,6 +6,25 @@ pytest is an unit test framework which helps in writing test cases.
 This framework uses the API exposed in https://reqres.in/ to show how API calls can be made. This framework can be used against other applications which exposes the 
 API.
 
+# Installing the framework:
+# Pre-requisite :
+# python and pip
+
+Clone the project:
+1. Download the project or clone the project
+ ```git clone https://github.com/gurudattvshenoy/api_automation.git```
+ 
+2. Change the directory to api_automation
+   ```Eg: cd api_automation```
+   
+3.Install the requirement files:
+  ```pip install requirements.txt```
+  
+4.Navigate to tests folder:
+ ``` pytest -s --html=reports/relayrapi-users-crud.html```
+
+This will run the tests and generates html reports in reports folder and execution logs will reside in logs folder for tracing the execution.
+
 1. Create User:
 POST REST call to URL - https://reqres.in/api/users
 Request payload:
