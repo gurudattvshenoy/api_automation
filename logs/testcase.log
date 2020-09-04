@@ -1,0 +1,136 @@
+2020-09-04 20:20:04,409:INFO: Started executing ApiHelper()
+2020-09-04 20:20:04,410:Info: Completed executing ApiHelper in 23381.299110738 seconds 
+2020-09-04 20:20:04,410:INFO: Started executing UserApi.create_user((<libs.userapi.UserApi.UserApi object at 0x7fc3c293ebe0>, 'Gurudatt', 'SDET Engineer'))
+2020-09-04 20:20:04,410:Attempting to create user with payload {'name': 'Gurudatt', 'job': 'SDET Engineer'}
+2020-09-04 20:20:04,410:INFO: Started executing ApiHelper.post((<libs.common.ApiHelper.ApiHelper object at 0x7fc3c2a34130>, 'users/'),{'json_obj': {'name': 'Gurudatt', 'job': 'SDET Engineer'}}) 
+2020-09-04 20:20:05,271:The response of POST api {'response_body': {'name': 'Gurudatt', 'job': 'SDET Engineer', 'id': '529', 'createdAt': '2020-09-04T14:50:05.199Z'}, 'status_code': 201, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:05 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '91', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=df6db03070aa05c5aa814a52be21159e71599231005; expires=Sun, 04-Oct-20 14:50:05 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"5b-DsAtm9xE64l7Se5mfj2YGGdQBmU"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '04fb31a9b50000cc3eceb4a200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Server': 'cloudflare', 'CF-RAY': '5cd88555ec75cc3e-ZRH'}}
+2020-09-04 20:20:05,272:Info: Completed executing ApiHelper.post in 23382.161008096 seconds 
+2020-09-04 20:20:05,272:Info: Completed executing UserApi.create_user in 23382.161263255 seconds 
+2020-09-04 20:20:05,272:actual output is:
+2020-09-04 20:20:05,272:201
+2020-09-04 20:20:05,273:expected output is:
+2020-09-04 20:20:05,273:HTTPStatus.CREATED
+2020-09-04 20:20:05,273:actual output is:
+2020-09-04 20:20:05,273:Gurudatt
+2020-09-04 20:20:05,273:expected output is:
+2020-09-04 20:20:05,273:Gurudatt
+2020-09-04 20:20:05,273:actual output is:
+2020-09-04 20:20:05,274:SDET Engineer
+2020-09-04 20:20:05,274:expected output is:
+2020-09-04 20:20:05,274:SDET Engineer
+2020-09-04 20:20:05,276:INFO: Started executing ApiHelper()
+2020-09-04 20:20:05,276:Info: Completed executing ApiHelper in 23382.165744427 seconds 
+2020-09-04 20:20:05,277:INFO: Started executing UserApi.update_user((<libs.userapi.UserApi.UserApi object at 0x7fc3c2a34220>, 2, 'guru', 'SDET'))
+2020-09-04 20:20:05,277:Attempting to update user 2 using payload {'name': 'guru', 'job': 'SDET'}
+2020-09-04 20:20:05,277:INFO: Started executing ApiHelper.put((<libs.common.ApiHelper.ApiHelper object at 0x7fc3c293ee20>, 'users/2', {'name': 'guru', 'job': 'SDET'}))
+2020-09-04 20:20:06,259:The response of PUT api {'response_body': {'updatedAt': '2020-09-04T14:50:06.063Z'}, 'status_code': 200, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:06 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '40', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=da843e4448dcb08028d4aa3e39ed34bbd1599231005; expires=Sun, 04-Oct-20 14:50:05 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"28-rlaB2MPd2IUYGdkWAp3TfHJqO+o"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '04fb31ac3b000019e1d5800200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '5cd88559fe6919e1-SIN'}}
+2020-09-04 20:20:06,259:Info: Completed executing ApiHelper.put in 23383.148281624 seconds 
+2020-09-04 20:20:06,259:Info: Completed executing UserApi.update_user in 23383.148529236 seconds 
+2020-09-04 20:20:06,259:actual output is:
+2020-09-04 20:20:06,260:200
+2020-09-04 20:20:06,260:expected output is:
+2020-09-04 20:20:06,260:HTTPStatus.OK
+2020-09-04 20:20:06,262:INFO: Started executing ApiHelper()
+2020-09-04 20:20:06,262:Info: Completed executing ApiHelper in 23383.151659695 seconds 
+2020-09-04 20:20:06,263:INFO: Started executing UserApi.get_user_by_id((<libs.userapi.UserApi.UserApi object at 0x7fc3c293e280>, 2))
+2020-09-04 20:20:06,263:Fetching user id - 2 
+2020-09-04 20:20:06,263:INFO: Started executing ApiHelper.get((<libs.common.ApiHelper.ApiHelper object at 0x7fc3c293ea00>, 'users/2'))
+2020-09-04 20:20:06,766:The response of GET api {'response_body': {'data': {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg'}, 'ad': {'company': 'StatusCode Weekly', 'url': 'http://statuscode.org/', 'text': 'A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.'}}, 'status_code': 200, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:06 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=db6c60122b846719c29ec6277d8eb00041599231006; expires=Sun, 04-Oct-20 14:50:06 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '4203', 'cf-request-id': '04fb31b01700000786e181e200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '5cd8856028340786-LHR', 'Content-Encoding': 'gzip'}}
+2020-09-04 20:20:06,766:Info: Completed executing ApiHelper.get in 23383.655700123 seconds 
+2020-09-04 20:20:06,767:Info: Completed executing UserApi.get_user_by_id in 23383.655931195 seconds 
+2020-09-04 20:20:06,767:actual output is:
+2020-09-04 20:20:06,767:200
+2020-09-04 20:20:06,767:expected output is:
+2020-09-04 20:20:06,767:HTTPStatus.OK
+2020-09-04 20:20:06,768:actual output is:
+2020-09-04 20:20:06,768:janet.weaver@reqres.in
+2020-09-04 20:20:06,768:expected output is:
+2020-09-04 20:20:06,768:janet.weaver@reqres.in
+2020-09-04 20:20:06,768:actual output is:
+2020-09-04 20:20:06,768:Janet
+2020-09-04 20:20:06,769:expected output is:
+2020-09-04 20:20:06,769:Janet
+2020-09-04 20:20:06,769:actual output is:
+2020-09-04 20:20:06,769:Weaver
+2020-09-04 20:20:06,769:expected output is:
+2020-09-04 20:20:06,769:Weaver
+2020-09-04 20:20:06,771:INFO: Started executing ApiHelper()
+2020-09-04 20:20:06,772:Info: Completed executing ApiHelper in 23383.660984201 seconds 
+2020-09-04 20:20:06,772:INFO: Started executing UserApi.delete_user((<libs.userapi.UserApi.UserApi object at 0x7fc3c293eb80>, 2))
+2020-09-04 20:20:06,772:Attempting to delete user with id - 2 
+2020-09-04 20:20:06,772:INFO: Started executing ApiHelper.delete((<libs.common.ApiHelper.ApiHelper object at 0x7fc3c293ecd0>, 'users/2'))
+2020-09-04 20:20:07,511:The response of DELETE api {'status_code': 204, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:07 GMT', 'Content-Length': '0', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=d404bbc7b873433344a0864151760165c1599231007; expires=Sun, 04-Oct-20 14:50:07 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '04fb31b1560000ddf5f7bec200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Server': 'cloudflare', 'CF-RAY': '5cd885622ac8ddf5-SIN'}}
+2020-09-04 20:20:07,511:Info: Completed executing ApiHelper.delete in 23384.400689384 seconds 
+2020-09-04 20:20:07,514:Info: Completed executing UserApi.delete_user in 23384.402883338 seconds 
+2020-09-04 20:20:07,514:actual output is:
+2020-09-04 20:20:07,514:204
+2020-09-04 20:20:07,514:expected output is:
+2020-09-04 20:20:07,514:HTTPStatus.NO_CONTENT
+2020-09-04 20:20:50,332:INFO: Started executing ApiHelper()
+2020-09-04 20:20:50,333:Info: Completed executing ApiHelper in 23427.222083215 seconds 
+2020-09-04 20:20:50,333:INFO: Started executing UserApi.create_user((<libs.userapi.UserApi.UserApi object at 0x7ff6b7c5f760>, 'Gurudatt', 'SDET Engineer'))
+2020-09-04 20:20:50,333:Attempting to create user with payload {'name': 'Gurudatt', 'job': 'SDET Engineer'}
+2020-09-04 20:20:50,333:INFO: Started executing ApiHelper.post((<libs.common.ApiHelper.ApiHelper object at 0x7ff6b7c5f610>, 'users/'),{'json_obj': {'name': 'Gurudatt', 'job': 'SDET Engineer'}}) 
+2020-09-04 20:20:50,950:The response of POST api {'response_body': {'name': 'Gurudatt', 'job': 'SDET Engineer', 'id': '200', 'createdAt': '2020-09-04T14:50:50.922Z'}, 'status_code': 201, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:50 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '91', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=df673cf713acc6463ca25f37434b475571599231050; expires=Sun, 04-Oct-20 14:50:50 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"5b-lc7p02GXSf2gHwyVT0fAMzR1oPU"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '04fb325c830000e61c0603f200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Server': 'cloudflare', 'CF-RAY': '5cd886740e97e61c-LHR'}}
+2020-09-04 20:20:50,951:Info: Completed executing ApiHelper.post in 23427.839872715 seconds 
+2020-09-04 20:20:50,951:Info: Completed executing UserApi.create_user in 23427.840127772 seconds 
+2020-09-04 20:20:50,951:actual output is:
+2020-09-04 20:20:50,951:201
+2020-09-04 20:20:50,951:expected output is:
+2020-09-04 20:20:50,952:HTTPStatus.CREATED
+2020-09-04 20:20:50,952:actual output is:
+2020-09-04 20:20:50,952:Gurudatt
+2020-09-04 20:20:50,952:expected output is:
+2020-09-04 20:20:50,952:Gurudatt
+2020-09-04 20:20:50,952:actual output is:
+2020-09-04 20:20:50,953:SDET Engineer
+2020-09-04 20:20:50,953:expected output is:
+2020-09-04 20:20:50,953:SDET Engineer
+2020-09-04 20:20:50,956:INFO: Started executing ApiHelper()
+2020-09-04 20:20:50,956:Info: Completed executing ApiHelper in 23427.84506668 seconds 
+2020-09-04 20:20:50,956:INFO: Started executing UserApi.update_user((<libs.userapi.UserApi.UserApi object at 0x7ff6b7c5f850>, 2, 'guru', 'SDET'))
+2020-09-04 20:20:50,956:Attempting to update user 2 using payload {'name': 'guru', 'job': 'SDET'}
+2020-09-04 20:20:50,956:INFO: Started executing ApiHelper.put((<libs.common.ApiHelper.ApiHelper object at 0x7ff6b7c5f760>, 'users/2', {'name': 'guru', 'job': 'SDET'}))
+2020-09-04 20:20:53,138:The response of PUT api {'response_body': {'updatedAt': '2020-09-04T14:50:52.942Z'}, 'status_code': 200, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:53 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '40', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=d81573d597e0a2fd1c448212191bf6e5a1599231052; expires=Sun, 04-Oct-20 14:50:52 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"28-A5nlrGNusdxVoGGRyNqPKlWcHH0"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '04fb32635200001a4eacb17200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '5cd8867ee81c1a4e-SIN'}}
+2020-09-04 20:20:53,139:Info: Completed executing ApiHelper.put in 23430.027862386 seconds 
+2020-09-04 20:20:53,139:Info: Completed executing UserApi.update_user in 23430.028006952 seconds 
+2020-09-04 20:20:53,139:actual output is:
+2020-09-04 20:20:53,139:200
+2020-09-04 20:20:53,139:expected output is:
+2020-09-04 20:20:53,139:HTTPStatus.OK
+2020-09-04 20:20:53,141:INFO: Started executing ApiHelper()
+2020-09-04 20:20:53,141:Info: Completed executing ApiHelper in 23430.030119559 seconds 
+2020-09-04 20:20:53,141:INFO: Started executing UserApi.get_user_by_id((<libs.userapi.UserApi.UserApi object at 0x7ff6b7c5fd30>, 2))
+2020-09-04 20:20:53,141:Fetching user id - 2 
+2020-09-04 20:20:53,141:INFO: Started executing ApiHelper.get((<libs.common.ApiHelper.ApiHelper object at 0x7ff6b7c5fa60>, 'users/2'))
+2020-09-04 20:20:53,720:The response of GET api {'response_body': {'data': {'id': 2, 'email': 'janet.weaver@reqres.in', 'first_name': 'Janet', 'last_name': 'Weaver', 'avatar': 'https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg'}, 'ad': {'company': 'StatusCode Weekly', 'url': 'http://statuscode.org/', 'text': 'A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.'}}, 'status_code': 200, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:53 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=d77c7a018923463c5e3c1da6b9e6ccca11599231053; expires=Sun, 04-Oct-20 14:50:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"', 'Via': '1.1 vegur', 'Cache-Control': 'max-age=14400', 'CF-Cache-Status': 'HIT', 'Age': '5844', 'cf-request-id': '04fb3267260000a9a609bb0200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Vary': 'Accept-Encoding', 'Server': 'cloudflare', 'CF-RAY': '5cd886850d44a9a6-SIN', 'Content-Encoding': 'gzip'}}
+2020-09-04 20:20:53,720:Info: Completed executing ApiHelper.get in 23430.609624835 seconds 
+2020-09-04 20:20:53,721:Info: Completed executing UserApi.get_user_by_id in 23430.609860317 seconds 
+2020-09-04 20:20:53,721:actual output is:
+2020-09-04 20:20:53,721:200
+2020-09-04 20:20:53,721:expected output is:
+2020-09-04 20:20:53,721:HTTPStatus.OK
+2020-09-04 20:20:53,722:actual output is:
+2020-09-04 20:20:53,722:janet.weaver@reqres.in
+2020-09-04 20:20:53,722:expected output is:
+2020-09-04 20:20:53,722:janet.weaver@reqres.in
+2020-09-04 20:20:53,722:actual output is:
+2020-09-04 20:20:53,723:Janet
+2020-09-04 20:20:53,723:expected output is:
+2020-09-04 20:20:53,723:Janet
+2020-09-04 20:20:53,723:actual output is:
+2020-09-04 20:20:53,723:Weaver
+2020-09-04 20:20:53,723:expected output is:
+2020-09-04 20:20:53,724:Weaver
+2020-09-04 20:20:53,726:INFO: Started executing ApiHelper()
+2020-09-04 20:20:53,726:Info: Completed executing ApiHelper in 23430.615373949 seconds 
+2020-09-04 20:20:53,726:INFO: Started executing UserApi.delete_user((<libs.userapi.UserApi.UserApi object at 0x7ff6b7c80c70>, 2))
+2020-09-04 20:20:53,726:Attempting to delete user with id - 2 
+2020-09-04 20:20:53,727:INFO: Started executing ApiHelper.delete((<libs.common.ApiHelper.ApiHelper object at 0x7ff6b7c80340>, 'users/2'))
+2020-09-04 20:20:55,277:The response of DELETE api {'status_code': 204, 'headers': {'Date': 'Fri, 04 Sep 2020 14:50:55 GMT', 'Content-Length': '0', 'Connection': 'keep-alive', 'Set-Cookie': '__cfduid=d50552dcdda591751a25519f007254d0a1599231054; expires=Sun, 04-Oct-20 14:50:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure', 'X-Powered-By': 'Express', 'Access-Control-Allow-Origin': '*', 'Etag': 'W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'DYNAMIC', 'cf-request-id': '04fb326bbf0000dcfecca88200000001', 'Expect-CT': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"', 'Server': 'cloudflare', 'CF-RAY': '5cd8868c6a70dcfe-SIN'}}
+2020-09-04 20:20:55,278:Info: Completed executing ApiHelper.delete in 23432.166993072 seconds 
+2020-09-04 20:20:55,278:Info: Completed executing UserApi.delete_user in 23432.167228454 seconds 
+2020-09-04 20:20:55,278:actual output is:
+2020-09-04 20:20:55,278:204
+2020-09-04 20:20:55,278:expected output is:
+2020-09-04 20:20:55,279:HTTPStatus.NO_CONTENT
