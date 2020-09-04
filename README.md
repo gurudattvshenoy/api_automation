@@ -5,7 +5,8 @@ pytest is an unit test framework which helps in writing test cases.
 
 This framework uses the API exposed by https://reqres.in/  to illustrate how API calls can made using python. This framework can be used against other applications which exposes APIs.
 
-``` Note: Make sure python and pip are installed on the system. Have tested the framework on Python 3.8.2 and pip 20.2.2```
+``` Note: Make sure python and pip are installed on the system. Have tested the framework on Python 3.8.2 and pip 20.2.2```  
+
 To install the framework follow below steps:
 
 1. Download the project or clone the project.
