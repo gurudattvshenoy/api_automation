@@ -21,7 +21,7 @@ To install the framework follow below steps:
 
   ```pip install requirements.txt```
   
-4.Navigate to tests folder:  
+4.Navigate to tests folder and run the below command:  
 
  ``` pytest -s --html=reports/relayrapi-users-crud.html```  
  
@@ -57,19 +57,24 @@ To install the framework follow below steps:
 This will run the tests and generates html reports in reports folder and execution logs will reside in logs folder for tracing the execution.
 
 Tests automated are 
-1. Create User:
-POST REST call to URL - https://reqres.in/api/users
+1. Create User:  
+
+POST REST call to URL - https://reqres.in/api/users   
+
 Request payload:
 {
     "name": "guru",
     "job": "Software SDET"
-}
-HTTP Response status:
-201
+}  
 
-2. List User:
+HTTP Response status:201  
+
+
+2. List User:  
+
 Fetches the user details whose id is 2.
-GET REST call to URL - https://reqres.in/api/users/2
+GET REST call to URL - https://reqres.in/api/users/2  
+
 
 API Response:
 {
@@ -85,5 +90,5 @@ API Response:
         "url": "http://statuscode.org/",
         "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
     }
-}
-2. 
+} 
+
