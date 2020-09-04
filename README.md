@@ -49,7 +49,7 @@ To install the framework follow below steps:
 
 API Reference: https://reqres.in/
 ```
-Test automated:
+Test automated to illustrate CRUD.
 1. Verify user can be created using rest post api call
 2. Verify user can be updated rest put api call
 3. Verify user can be fetched using rest get api call
