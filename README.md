@@ -26,33 +26,28 @@ To install the framework follow below steps:
  ``` pytest -s --html=reports/relayrapi-users-crud.html```  
  
 ```
-├── conf
-│   ├── __init__.py
+├── conf    - Contains configuration files like URL and base path,
 │   ├── RelayrApiConstants.py
 │   └── relayrapi.json
-├── libs
-│   ├── common
-│   │   ├── ApiHelper.py
+├── libs             - Core libraries or utilities which are often used by test cases
+│   ├── common       
+│   │   ├── ApiHelper.py  
 │   │   ├── Assertion.py
 │   │   ├── ExecTime.py
-│   │   ├── __init__.py
 │   │   ├── Logger.py
-│   ├── __init__.py
 │   └── userapi
-│       ├── __init__.py
 │       └── UserApi.py
-├── logs
+├── logs        - Execution logs
 │   └── testcase.log
 ├── pytest.ini
-├── README.md
-├── reports
+├── reports     - Execution reports   
 │   └── relayrapi-users-crud.html
 ├── requirements.txt
 └── tests
-    ├── __init__.py
     └── test_users.py
 ```
 
+API Reference: https://reqres.in/
 
 This will run the tests and generates html reports in reports folder and execution logs will reside in logs folder for tracing the execution.
 
