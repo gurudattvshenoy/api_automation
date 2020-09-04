@@ -1,9 +1,11 @@
 
+# REST API Framework Using Python Requests,Pytest  
+
 This API automation framework is developed using python requests library and pytest unit testing framework.
 request library has methods which helps to make REST calls to the any application which exposes APIs.
 pytest is an unit test framework which helps in writing test cases.
 
-This framework uses the API exposed by https://reqres.in/  to illustrate how API calls can made using python. This framework can be used against other applications which exposes APIs.
+This framework uses the APIs exposed by https://reqres.in/  to illustrate how API calls can made using python. This framework can be used against other applications which exposes APIs by making changes to relayrapi.json file.
 
 ``` Note: Make sure python and pip are installed on the system. Have tested the framework on Python 3.8.2 and pip 20.2.2```  
 
@@ -25,7 +27,7 @@ To install the framework follow below steps:
 
  ``` pytest -s --html=reports/relayrapi-users-crud.html```  
 
-# Project Structure  
+## Folder Structure  
 ```
 ├── conf    - Contains configuration files like URL and base path,
 │   ├── RelayrApiConstants.py  - Read the configurations and stores the as CONSTANT.
