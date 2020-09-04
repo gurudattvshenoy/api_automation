@@ -42,8 +42,8 @@ To install the framework follow below steps:
 ├── pytest.ini
 ├── reports     - Execution reports   
 │   └── relayrapi-users-crud.html
-├── requirements.txt
-└── tests
+├── requirements.txt - Dependencies of the project
+└── tests            - test cases written using pytest framework.
     └── test_users.py
 ```
 
