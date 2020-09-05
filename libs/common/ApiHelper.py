@@ -15,17 +15,17 @@ class ApiHelper:
         self.base_path = base_path
 
     @exec_log
-    def post(self, request_url, json_obj=None, params=None, headers=None):
+    def post(self, end_point, json_obj=None, params=None, headers=None):
         """
         Purpose: Makes POST REST call and returns API response
-         :request_url: resource in endpoint
-         :json_obj: json payload
+         :end_point: Endpoint in the request
+         :json_obj: JSON payload
          :params: Path parameters
          :headers: Any headers to make GET request
-         :return: dictionary having response json and status code of the POST request
+         :return: Dictionary object having response json and status code of the POST request
         """
 
-        request_url = self.base_uri + self.base_path + request_url
+        request_url = self.base_uri + self.base_path + end_point
         resp = requests.post(request_url, params=params,json=json_obj,verify=False)
         result = {
                 "response_body": resp.json(),
@@ -36,15 +36,15 @@ class ApiHelper:
         return result
 
     @exec_log
-    def get(self, request_url, params=None,headers=None):
+    def get(self, end_point, params=None,headers=None):
         """
         Purpose: Makes GET REST call based on the input arguments and returns API response
-          :request_url: resource in endpoint
+          :request_url: endpoint in request
           :params: Path parameters
           :headers: headers in request
-          :return:dictionary having response json and status code of the request
+          :return:Dictionary object having response json and status code of the request
         """
-        request_url = self.base_uri + self.base_path + request_url
+        request_url = self.base_uri + self.base_path + end_point
         resp = requests.get(request_url, params=params, headers=None, verify=False)
         result = {
                 "response_body": resp.json(),
@@ -55,15 +55,15 @@ class ApiHelper:
         return result
 
     @exec_log
-    def put(self, request_url, json_obj, headers=None):
+    def put(self, end_point, json_obj, headers=None):
         """
         Purpose: Makes PUT REST call based on the input arguments and returns API response
-           :request_url: This is the resource endpoint
+           :end_point: Endpoint in the request
            :param : Path parameters
            :headers: Any headers to make get request
-           :return:dictionary having response json and status code of the GET request
+           :return:Dictionary object having response json and status code of the GET request
          """
-        request_url = self.base_uri + self.base_path + request_url
+        request_url = self.base_uri + self.base_path + end_point
         resp = requests.put(request_url, data=json.dumps(json_obj), headers=headers, verify=False)
         result = {
                 "response_body": resp.json(),
@@ -74,15 +74,14 @@ class ApiHelper:
         return result
 
     @exec_log
-    def delete(self, request_url, headers=None):
+    def delete(self, end_point, headers=None):
         """
             Purpose: Makes DELETE REST call based on the input arguments and returns API response
-            :request_url: This is the resource endpoint
-            :params: Path parameters
+            :request_url: Endpoint in the request
             :headers: Any headers to make get request
             :return:dictionary having response json and status code of the GET request
           """
-        request_url = self.base_uri + self.base_path + request_url
+        request_url = self.base_uri + self.base_path + end_point
         resp = requests.delete(request_url, headers=headers, verify=False)
         result = {
                 "status_code": resp.status_code,
