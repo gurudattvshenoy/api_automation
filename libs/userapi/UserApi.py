@@ -10,6 +10,9 @@ class UserApi:
 
     @exec_log
     def create_user(self, name, job):
+        """
+        Creates the user using POST call to endpoint based on name and job input
+        """
         payload = {
             "name": name,
             "job": job
@@ -19,6 +22,9 @@ class UserApi:
 
     @exec_log
     def update_user(self, id, name, job):
+        """
+        Updates the user info. using PUT call to endpoint based on input name and job
+        """
         payload = {
                 "name": name,
                 "job": job
@@ -28,21 +34,33 @@ class UserApi:
 
     @exec_log
     def delete_user(self, id):
+        """
+        Deletes the user info. based on input id
+        """
         logger.debug("Attempting to delete user with id - {} ".format(id))
         return self.api_object.delete(self.end_point+"{}".format(id))
 
     @exec_log
     def get_all_users(self):
+        """
+        Fetches all the users in the system
+        """
         logger.debug("Attempting to fetch all the users ")
         return self.api_object.get("users")
 
     @exec_log
     def get_user_by_id(self, id):
+        """
+        Gets the user information based on id
+        """
         logger.debug("Fetching user id - {} ".format(id))
         return self.api_object.get(self.end_point + "{}".format(id))
 
     @exec_log
     def is_email_present(self, email):
+        """
+        Confirms whether email address is present in application
+        """
         resp = self.api_object.get("users")
         logger.debug("Checking if email {} is present?".format(email))
         for record in resp.get("response_body").get('data'):
@@ -54,6 +72,9 @@ class UserApi:
 
     @exec_log
     def is_first_name_present(self, first_name):
+        """
+        Confirms whether first name is present in application
+        """
         resp = self.api_object.get("users")
         logger.debug("Checking if first name {} is present?".format(first_name))
         for record in resp.get("response_body").get('data'):
@@ -65,6 +86,9 @@ class UserApi:
 
     @exec_log
     def is_last_name_present(self, last_name):
+        """
+        Confirms whether last name is present in application
+        """
         resp = self.api_object.get("users")
         logger.debug("Checking if last name {} is present?".format(last_name))
         for record in resp.get("response_body").get('data'):
