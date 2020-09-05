@@ -17,11 +17,11 @@ class ApiHelper:
     @exec_log
     def post(self, request_url, json_obj=None, params=None, headers=None):
         """
-         Purpose: Makes POST REST call
-         :param request_url: This is the resource endpoint
-         :param json_obj: json payload
-         :param params: Path parameters
-         :param headers: Any headers to make get request
+        Purpose: Makes POST REST call and returns API response
+         :request_url: resource in endpoint
+         :json_obj: json payload
+         :params: Path parameters
+         :headers: Any headers to make GET request
          :return: dictionary having response json and status code of the POST request
         """
 
@@ -38,11 +38,11 @@ class ApiHelper:
     @exec_log
     def get(self, request_url, params=None,headers=None):
         """
-          Purpose: Makes GET REST call based on the input arguments and returns reponse
-          :param request_url: This is the resource endpoint
-          :param params: Path parameters
-          :param headers: Any headers to make get request
-          :return:dictionary having response json and status code of the GET request
+        Purpose: Makes GET REST call based on the input arguments and returns API response
+          :request_url: resource in endpoint
+          :params: Path parameters
+          :headers: headers in request
+          :return:dictionary having response json and status code of the request
         """
         request_url = self.base_uri + self.base_path + request_url
         resp = requests.get(request_url, params=params, headers=None, verify=False)
@@ -56,6 +56,13 @@ class ApiHelper:
 
     @exec_log
     def put(self, request_url, json_obj, headers=None):
+        """
+        Purpose: Makes PUT REST call based on the input arguments and returns API response
+           :request_url: This is the resource endpoint
+           :param : Path parameters
+           :headers: Any headers to make get request
+           :return:dictionary having response json and status code of the GET request
+         """
         request_url = self.base_uri + self.base_path + request_url
         resp = requests.put(request_url, data=json.dumps(json_obj), headers=headers, verify=False)
         result = {
@@ -68,6 +75,13 @@ class ApiHelper:
 
     @exec_log
     def delete(self, request_url, headers=None):
+        """
+            Purpose: Makes DELETE REST call based on the input arguments and returns API response
+            :request_url: This is the resource endpoint
+            :params: Path parameters
+            :headers: Any headers to make get request
+            :return:dictionary having response json and status code of the GET request
+          """
         request_url = self.base_uri + self.base_path + request_url
         resp = requests.delete(request_url, headers=headers, verify=False)
         result = {
