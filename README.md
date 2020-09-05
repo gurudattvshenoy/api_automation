@@ -17,15 +17,18 @@ To install the framework follow below steps:
  
 2. Change the directory to api_automation.  
 
-   ```Eg: cd api_automation```
+   ```Eg: cd api_automation/```
    
 3.Install dependencies for the framework using requirements.txt.  
 
   ```pip install requirements.txt```
   
-4.Navigate to tests folder and run the below command:  
+4.Navigate to tests folder and run the below command to execute the tests:  
 
- ``` pytest -s --html=reports/relayrapi-users-crud.html```  
+ ``` pytest -v --html=reports/relayrapi-users-crud.html```  
+       or 
+  See logs on console 
+ ``pytest -v -s --html=reports/relayrapi-users-crud.html```  
 
 ## Folder Structure  
 ```
