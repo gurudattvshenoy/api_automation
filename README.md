@@ -10,7 +10,7 @@ This framework uses the APIs exposed by https://reqres.in/  to illustrate how AP
 1. Support execution logging support
 2. Shows html reports
 
-# More features can be added as enhancements:
+# More features can be added as enhancement:
 1. More tests can be automated. Proper marking of test cases can be done here. When there are more tests, we can mark tests which are eligible for smoke, regression,exit tests, contract tests.
 2. More docstrings for documentation can be added.
 3. Integrated with jenkins for CI also can schedule  nightly on master build.
