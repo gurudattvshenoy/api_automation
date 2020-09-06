@@ -6,6 +6,15 @@ request library has methods which helps to make REST calls to the any applicatio
 pytest is an unit test framework which helps in writing test cases.
 
 This framework uses the APIs exposed by https://reqres.in/  to illustrate how API calls can made using python. This framework can be used against other applications which exposes APIs by making changes to relayrapi.json file.
+# Feature
+1. Support execution logging support
+2. Shows html reports
+
+# More features can be added as enhancements:
+1. More tests can be automated. Proper marking of test cases can be done here. When there are more tests, we can mark tests which are eligible for smoke, regression,exit tests, contract tests.
+2. More docstrings for documentation can be added.
+3. Integrated with jenkins for CI also can schedule  nightly on master build.
+4. Create automation dashboard, can integrate this framework with automation dashboard with nice graphical charts for each runs during CI and nightly runs
 
 ``` Note: Make sure python and pip are installed on the system. Have tested the framework on Python 3.8.2 and pip 20.2.2```  
 
@@ -26,7 +35,8 @@ To install the framework follow below steps:
 4.Navigate to tests folder and run the below command to execute the tests:  
 
  ``` pytest -v --html=reports/relayrapi-users-crud.html```  
-       or 
+       or   
+       
   See logs on console 
  ``pytest -v -s --html=reports/relayrapi-users-crud.html```  
 
