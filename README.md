@@ -6,9 +6,11 @@ request library has methods which helps to make REST calls to the any applicatio
 pytest is an unit test framework which helps in writing test cases.
 
 This framework uses the APIs exposed by https://reqres.in/  to illustrate how API calls can made using python. This framework can be used against other applications which exposes APIs by making changes to relayrapi.json file.
+
 # Feature
-1. Support execution logging support
+1. Automates REST API
 2. Shows html reports
+3. Has execution logging 
 
 # More features can be added as enhancement:
 1. More tests can be automated. Proper marking of test cases can be done here. When there are more tests, we can mark tests which are eligible for smoke, regression,exit tests, contract tests.
